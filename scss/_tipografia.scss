@@ -1,0 +1,43 @@
+@use 'mixins' as mix;
+@use 'variables' as var;
+
+
+.titulo, .subtitulo, .crear_cuenta, #ubicacion, .mision, .vision, .contacto {
+    @include mix.font(var.$font-family-dancing, null, null, var.$primary-font-color);
+    text-align: center;
+  }
+  
+  .titulo {
+    font-size: 100px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px var.$shadow-color;
+    text-transform: capitalize;
+    margin-top: 0;
+  }
+  
+  .subtitulo, .crear_cuenta, .contacto {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .subtitulo {
+    font-size: 40px;
+    text-transform: lowercase;
+    color: black;
+  }
+  
+  .crear_cuenta {
+    text-align: center;
+  }
+  
+  #ubicacion, .mision, .vision {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .texto-mision, .texto-vision {
+    @include mix.font(var.$font-family-times, 20px);
+  }
+  
