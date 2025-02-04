@@ -72,7 +72,13 @@ header .nav-links a:hover {
   transform: translate(-50%, -50%);
 }
 
-.titulo, .subtitulo, .crear_cuenta, #ubicacion, .mision, .vision, .contacto {
+.titulo,
+.subtitulo,
+.crear_cuenta,
+#ubicacion,
+.mision,
+.vision,
+.contacto {
   font-family: "Dancing Script";
   color: #faf4d3;
   text-align: center;
@@ -86,7 +92,9 @@ header .nav-links a:hover {
   margin-top: 0;
 }
 
-.subtitulo, .crear_cuenta, .contacto {
+.subtitulo,
+.crear_cuenta,
+.contacto {
   font-size: 25px;
   font-weight: bold;
 }
@@ -101,14 +109,32 @@ header .nav-links a:hover {
   text-align: center;
 }
 
-#ubicacion, .mision, .vision {
+#ubicacion {
+  font-family: "Dancing Script";
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.mapa {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#ubicacion,
+.mision,
+.vision {
   font-size: 50px;
   text-transform: capitalize;
   margin-top: 25px;
   margin-bottom: 25px;
 }
 
-.texto-mision, .texto-vision {
+.texto-mision,
+.texto-vision {
   font-family: "Times New Roman", Times, serif;
   font-size: 20px;
   font-weight: normal;
@@ -254,13 +280,11 @@ footer .footer-links a:hover {
 
 @media (max-width: 480px) {
   header {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
   }
   .nav-links {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -294,13 +318,12 @@ footer .footer-links a:hover {
     font-size: 14px;
   }
 }
-@media (max-width: 768px) {
+@media (min-widht: 481px) and (max-width: 768px) {
   .header {
     flex-direction: row;
   }
 }
 .nav-links {
-  display: flex;
   flex-direction: row;
   align-items: center;
 }

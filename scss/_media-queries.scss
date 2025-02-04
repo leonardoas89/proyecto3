@@ -1,13 +1,11 @@
 @media (max-width: 480px) {
   header {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
   }
 
   .nav-links {
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -50,14 +48,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-widht: 481px) and (max-width: 768px) {
   .header {
     flex-direction: row;
   }
 }
 
 .nav-links {
-  display: flex;
   flex-direction: row;
   align-items: center;
 }
