@@ -31,7 +31,8 @@
 .subtitulo {
   font-size: 40px;
   text-transform: lowercase;
-  color: black;
+  color: var.$primary-font-color;
+  text-shadow: black;
 }
 
 .crear_cuenta {

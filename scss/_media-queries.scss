@@ -1,3 +1,4 @@
+/* Mobile (max-width: 480px) */
 @media (max-width: 480px) {
   header {
     flex-direction: column;
@@ -48,63 +49,106 @@
   }
 }
 
-@media (min-widht: 481px) and (max-width: 768px) {
-  .header {
+/* Tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  header {
     flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+  }
+
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav-links a {
+    margin: 10px 10px;
+    padding: 5px 15px;
+    font-size: 16px;
+  }
+
+  .titulo {
+    font-size: 50px;
+  }
+
+  .subtitulo {
+    font-size: 20px;
+  }
+
+  #main-video-fondo {
+    height: auto;
+    width: 100%;
+  }
+
+  .articles-section {
+    padding: 10px;
+  }
+
+  article {
+    margin: 10px 0;
+    padding: 15px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .footer-links a {
+    font-size: 14px;
   }
 }
 
-.nav-links {
-  flex-direction: row;
-  align-items: center;
-}
-
-.nav-links a {
-  margin: 10px 0;
-}
-
-.titulo {
-  font-size: 50px;
-}
-
-.subtitulo {
-  font-size: 20px;
-}
-
-#main-video-fondo {
-  height: auto;
-  width: 100%;
-}
-
-.articles-section {
-  padding: 10px;
-}
-
-article {
-  margin: 10px 0;
-  padding: 10px;
-}
-
-footer {
-  flex-direction: row;
-  text-align: center;
-}
-
-
+/* Desktop (769px to 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
-.titulo {
-  font-size: 75px;
-}
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+  }
 
-.subtitulo {
-  font-size: 30px;
-}
+  .nav-links {
+    flex-direction: row;
+    align-items: center;
+  }
 
-.nav-links a {
-  font-size: 16px;
-}
+  .nav-links a {
+    margin: 10px 15px;
+    padding: 5px 20px;
+    font-size: 18px;
+  }
 
-.footer-links a {
-  font-size: 16px;
-}
+  .titulo {
+    font-size: 75px;
+  }
+
+  .subtitulo {
+    font-size: 30px;
+  }
+
+  #main-video-fondo {
+    height: auto;
+    width: 100%;
+  }
+
+  .articles-section {
+    padding: 15px;
+  }
+
+  article {
+    margin: 15px 0;
+    padding: 20px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .footer-links a {
+    font-size: 16px;
+  }
 }
